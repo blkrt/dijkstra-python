@@ -1,5 +1,4 @@
 __author__ = 'blkrt'
-
 import networkx as nx
 import matplotlib.pyplot as plt
 
@@ -44,15 +43,12 @@ def dijkstra(graph, source, target):
     print(target)
 
 def main():
-
+	# Create graph with specific nodes
     G=nx.Graph()
     G.add_weighted_edges_from([(0,1,0),(1,2,0)])
-
     dijkstra(G,0,2)
     nx.draw(G)
-
     plt.show()
-
 
 if __name__ == "__main__":
     main()
